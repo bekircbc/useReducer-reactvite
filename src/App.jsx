@@ -21,11 +21,16 @@ const reducer = (theState, action) => {
       obj.number = theState.number + 1;
       obj.lastAction = "increment";
       break;
+    case "reset":
+      obj.number = 0;
+      obj.lastAction = "reset";
+      break;
   }
   return obj;
 };
 
 function App() {
+  const [state, dispatch] = useReducer(reducer, initialState);
   return (
     <div className="App">
       <h1>useReducer</h1>
@@ -36,6 +41,7 @@ function App() {
       <div className="buttonArea">
         <button onClick={() => dispatch({ type: "down" })}>-</button>
         <button onClick={() => dispatch({ type: "up" })}>+</button>
+        <button onClick={() => dispatch({ type: "reset" })}>Reset</button>
       </div>
     </div>
   );
