@@ -5,7 +5,7 @@ const initialState = {
   number: 0,
   lastAction: "",
   whenLastClicked: "",
-  timeClicked: 0,
+  timesClicked: 0,
 };
 
 const reducer = (theState, action) => {
