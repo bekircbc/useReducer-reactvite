@@ -11,3 +11,5 @@
 ## Webpage Links
 
 - [https://usereducer-reactvite.netlify.app/]
+
+- [https://vercel.com/bekircbc/use-reducer-reactvite/AYPfTnnEBoDEqB1gmoLAS6rcxQox]
