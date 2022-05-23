@@ -3,6 +3,7 @@ body {
   color: #ccc;
   padding: 0 20px;
   display: flex;
+  text-align: center;
   justify-content: center;
 
   h1 {
@@ -11,11 +12,18 @@ body {
   .dataArea {
     display: flex;
     flex-direction: column;
+    text-align: center;
     gap: 10px;
     margin: 10px;
+    background-color: antiquewhite;
+    padding: 10px;
+    color: black;
+    border-radius: 10px;
   }
   .buttonArea {
     display: flex;
+    justify-content: center;
+    align-items: center;
 
     button {
       width: 50px;
