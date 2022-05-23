@@ -34,14 +34,16 @@ function App() {
   return (
     <div className="App">
       <h1>useReducer</h1>
-      <div>Number: {state.number}</div>
-      <div>Last action: {state.lastAction}</div>
-      <div className="when">When last clicked: {state.whenLastClicked}</div>
-      <div className="timesClicked">Times clicked: {state.timesClicked}</div>
+      <div className="dataArea">
+        <div>Number: {state.number}</div>
+        <div>Last action: {state.lastAction}</div>
+        <div className="when">When last clicked: {state.whenLastClicked}</div>
+        <div className="timesClicked">Times clicked: {state.timesClicked}</div>
+      </div>
       <div className="buttonArea">
         <button onClick={() => dispatch({ type: "down" })}>-</button>
-        <button onClick={() => dispatch({ type: "up" })}>+</button>
         <button onClick={() => dispatch({ type: "reset" })}>Reset</button>
+        <button onClick={() => dispatch({ type: "up" })}>+</button>
       </div>
     </div>
   );
