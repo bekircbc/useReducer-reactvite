@@ -5,34 +5,42 @@ body {
   display: flex;
   text-align: center;
   justify-content: center;
-
-  h1 {
-    color: rgb(226, 226, 151);
-  }
-  .dataArea {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-    margin: 10px;
-    background-color: rgb(241, 235, 226);
-    padding: 10px;
-    color: black;
-    border-radius: 10px;
-  }
-  .buttonArea {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    button {
-      width: 50px;
-      height: 30px;
-      margin-right: 1px;
-      background-color: blue;
-      color: white;
-      border: 1px solid #ccc;
+  .App {
+    .title {
+      display: flex;
+      gap: 20px;
+      h1 {
+        color: rgb(226, 226, 151);
+      }
+      img {
+        width: 100px;
+      }
+    }
+    .dataArea {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      gap: 10px;
+      margin: 10px;
+      background-color: rgb(241, 235, 226);
+      padding: 10px;
+      color: black;
       border-radius: 10px;
+    }
+    .buttonArea {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      button {
+        width: 50px;
+        height: 30px;
+        margin-right: 1px;
+        background-color: blue;
+        color: white;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+      }
     }
   }
 }
