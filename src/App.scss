@@ -8,6 +8,8 @@ body {
   .App {
     .title {
       display: flex;
+      justify-content: center;
+      align-items: center;
       gap: 20px;
       h1 {
         color: rgb(226, 226, 151);
