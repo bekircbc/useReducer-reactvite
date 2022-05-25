@@ -33,7 +33,10 @@ function App() {
   const [state, dispatch] = useReducer(reducer, initialState);
   return (
     <div className="App">
-      <h1>useReducer</h1>
+      <div className="title">
+        <img src="images/icon.png" alt="logo" />
+        <h1>Use Reducer React Vite</h1>
+      </div>
       <div className="dataArea">
         <div>Number: {state.number}</div>
         <div>Last action: {state.lastAction}</div>
